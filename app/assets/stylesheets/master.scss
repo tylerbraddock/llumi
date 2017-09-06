@@ -1,1 +1,70 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Ubuntu+Condensed');
+
+/* universal */
+body {
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* top navigation */
+
+.nav-head {
+  position: fixed;
+  width: 100%;
+  background-color: #9b9a98;
+}
+
+#site-logo {
+  color: 	#2a5f9b;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-decoration: none;
+  margin-right: auto;
+  padding-left: 15px;
+  &:hover {
+    color: #e3d3bd;
+  }
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li a {
+    color: #2a5f9b;
+    &:hover {
+      color: #2a5f9b;
+    }
+  }
+}
+
+.weightlifter-img {
+  height: 35px;
+  width: 35px;
+  margin: 12.5px 0;
+}
+
+.rotate-weightlifter {
+  transform: rotate(360deg);
+  transition-duration: 1000ms;
+}
+
+#dropdownNavLink {
+  color: #2a5f9b;
+  text-decoration: none;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  padding: 0;
+  text-align: center;
+}
