@@ -1,15 +1,21 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Catamaran|Ubuntu+Condensed');
+@import "font-awesome";
 
 /* universal */
+
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   font-family: 'Catamaran', sans-serif;
 }
 
 /* top navigation */
 
 .nav-head {
-  position: fixed;
   width: 100%;
   background-color: #9b9a98;
 }
@@ -67,4 +73,52 @@ body {
 .dropdown-menu {
   padding: 0;
   text-align: center;
+}
+
+/* footer */
+
+#footer {
+  background-color: #2a5f9b;
+  color: #e3d3bd;
+  margin-top: 30px;
+  padding-top: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  a {
+    color: #e3d3bd;
+    font-weight: 100;
+  }
+  small {
+    display: block;
+    text-align: center;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.footer-links {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    padding: 0 12.5px;
+  }
+}
+
+.social {
+  background-color: #9b9a98;
+  text-align: center;
+  padding: 7px 12.5px 5px 12.5px;
+  i {
+    color: rgba(0, 0, 0, .65);
+    margin: 0 12.5px;
+  }
+  a:focus, a:hover {
+    text-decoration: none;
+  }
 }
