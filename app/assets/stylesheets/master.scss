@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   font-family: 'Catamaran', sans-serif;
 }
@@ -18,6 +20,7 @@ body {
 .nav-head {
   width: 100%;
   background-color: #9b9a98;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #site-logo {
@@ -43,9 +46,12 @@ body {
   padding: 0;
   margin: 0;
   li a {
-    color: #2a5f9b;
+    color: white;
     &:hover {
+      background-color: rgba(155, 154, 152, 0.75);
+      border: 0.5px solid rgba(0, 0, 0, 0.1);
       color: #2a5f9b;
+      font-weight: bold;
     }
   }
 }
@@ -71,21 +77,22 @@ body {
 }
 
 .dropdown-menu {
+  background-color: rgba(42, 95, 155, 0.9);
   padding: 0;
   text-align: center;
 }
 
 /* footer */
 
+#flex-content-container {
+  flex: 1;
+}
+
 #footer {
   background-color: #2a5f9b;
   color: #e3d3bd;
   margin-top: 30px;
   padding-top: 1rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   min-height: 100px;
   a {
@@ -120,5 +127,33 @@ body {
   }
   a:focus, a:hover {
     text-decoration: none;
+  }
+}
+
+/* homepage */
+
+.title-display {
+  text-align: center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  //background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.lead img {
+  height: 35px;
+  width: 35px;
+  transform: rotate(-135deg);
+}
+
+/* buttons */
+
+.btn {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #2a5f9b;
+  background-image: linear-gradient(to bottom, #306bab, #2a5f9b);
+  &:hover {
+    background-color: #306bab;
+    background-image: linear-gradient(to bottom, #2a5f9b, #306bab);
   }
 }

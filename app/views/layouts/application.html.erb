@@ -11,9 +11,11 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <div id="flex-content-container">
+      <%= render 'layouts/header' %>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <%= render 'layouts/footer' %>
   </body>
