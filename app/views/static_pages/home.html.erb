@@ -3,9 +3,49 @@
     <h1 class="display-3">lift like you mean it!</h1>
     <p class="lead">A one of a kind weightlifting session tracker</p>
     <hr class="my-4" />
-    <%= link_to 'Learn more!', '#', class: 'btn btn-primary btn-lg' %>
+    <%= link_to 'Learn more!', "#learn-more", class: 'btn btn-primary btn-lg' %>
   </div>
 </div>
 
-<div>
+<div class="container" id="learn-more">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="card">
+        <%= image_tag 'track-placeholder.png', class:"card-img-top placeholder-bg", alt:"Track weightlifting session" %>
+        <div class="card-block">
+          <h4 class="card-title">Record sets, reps, rest, and more!</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="card card-top-marg">
+        <%= image_tag 'graph-placeholder.jpg', class:"card-img-top", alt:"Monitor progress" %>
+        <div class="card-block">
+          <h4 class="card-title">Monitor and analyze your progress!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="card">
+        <%= image_tag 'goals-placeholder.jpg', class:"card-img-top", alt:"Set goals" %>
+        <div class="card-block">
+          <h4 class="card-title">Set and achieve your goals!</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="card">
+        <%= image_tag 'get-stronger-placeholder.png', class:"card-img-top placeholder-bg", alt:"Get stronger" %>
+        <div class="card-block">
+          <h4 class="card-title">Work smarter, get stronger!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="get-started text-center">
+  <h2>Ready to workout with llumi?</h2>
+  <%= link_to "Button", '#', class:'btn btn-primary btn-lg' %>
 </div>

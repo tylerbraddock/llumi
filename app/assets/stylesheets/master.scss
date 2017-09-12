@@ -91,7 +91,7 @@ body {
 #footer {
   background-color: #2a5f9b;
   color: #e3d3bd;
-  margin-top: 30px;
+  margin-top: 32px;
   padding-top: 1rem;
   width: 100%;
   min-height: 100px;
@@ -136,13 +136,38 @@ body {
   text-align: center;
   font-family: 'Ubuntu Condensed', sans-serif;
   background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-  //background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
 .lead img {
   height: 35px;
   width: 35px;
   transform: rotate(-135deg);
+}
+
+.card {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #e3d3bd;
+  margin-bottom: 32px;
+  img {
+    width: 100%;
+  }
+}
+
+.card-block {
+  background-image: linear-gradient(to bottom, #306bab, #2a5f9b);
+}
+
+.placeholder-bg {
+  background-color: whitesmoke;
+}
+
+.get-started {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  padding: 32px 0;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  .btn {
+    margin-top: 5px;
+  }
 }
 
 /* buttons */
