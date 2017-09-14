@@ -1,24 +1,23 @@
 <footer id="footer">
   <nav>
     <ul class="footer-links">
-      <li>Link</li>
-      <li>Link</li>
-      <li>Link</li>
-      <li>Link</li>
+      <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Contact', contact_path %></li>
+      <li><%= link_to 'Privacy', privacy_path %></li>
     </ul>
     <div class="social">
       <%= link_to 'https://www.facebook.com/tyler.braddock.90', target: '_blank' do %>
-        <i class="fa fa-facebook-square fa-4x" aria-hidden="true" aria-label="Facebook"></i>
+        <i class="fa fa-facebook-square fa-3x" aria-hidden="true" aria-label="Facebook"></i>
       <% end %>
 
       <%= link_to 'https://github.com/tylerbraddock', target: '_blank' do %>
-        <i class="fa fa-github-square fa-4x" aria-hidden="true" aria-label="GitHub"></i>
+        <i class="fa fa-github-square fa-3x" aria-hidden="true" aria-label="GitHub"></i>
       <% end %>
 
       <%= link_to 'https://www.linkedin.com/in/tyler-braddock-70ab63106/', target: '_blank' do %>
-        <i class="fa fa-linkedin-square fa-4x" aria-hidden="true" aria-label="Linked In"></i>
+        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" aria-label="Linked In"></i>
       <% end %>
     </div>
-    <small>Llumi was created by Tyler Braddock</small>
+    <small>llumi was created by Tyler Braddock</small>
   </nav>
 </footer>
