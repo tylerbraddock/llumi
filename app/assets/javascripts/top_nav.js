@@ -1,6 +1,6 @@
 // Rotates weightlifter menu icon on click
 
-$(function() {
+$(document).on('turbolinks:load', function() {
   $('#dropdownNavLink').on('click', function() {
     $('#dropdownNavLink img').addClass('rotate-weightlifter');
     $('.dropdown-menu').hide().fadeIn(500);
